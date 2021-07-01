@@ -13,7 +13,7 @@ development:
   prepared_statements: false
   adapter: postgresql
   database: <%= ENV.fetch('POSTGRES_DATABASE', 'chaskiq_dev') %>
-  username: <%= ENV.fetch('POSTGRES_USERNAME', 'postgres') %>
+  username: <%= ENV.fetch('POSTGRES_USERNAME', 'ubuntu') %>
   password: <%= ENV.fetch('POSTGRES_PASSWORD', '') %>
   min_messages: warning
   pool: 15
@@ -33,7 +33,7 @@ test:
   prepared_statements: false
   adapter: postgresql
   database: <%= ENV.fetch('POSTGRES_DATABASE', 'chaskiq_test') %>
-  username: <%= ENV.fetch('POSTGRES_USERNAME', 'postgres') %>
+  username: <%= ENV.fetch('POSTGRES_USERNAME', 'ubuntu') %>
   password: <%= ENV.fetch('POSTGRES_PASSWORD', '') %>
   min_messages: warning
   pool: 5
